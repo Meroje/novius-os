@@ -1,0 +1,93 @@
+{
+  "name": "novius-os/novius-os",
+  "type": "project",
+  "description": "Cross-Channel Open Source CMS base on the FuelPHP framework",
+  "keywords": ["cms"],
+  "homepage": "http://www.novius-os.org",
+  "license": "AGPL V3+",
+  "authors": [
+    {
+      "name": "Novius OS Development Team",
+      "email": "team@novius-os.org"
+    }
+  ],
+  "support": {
+    "forum": "http://forums.novius-os.org"
+  },
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/fuel/email" },
+    { "type": "vcs", "url": "https://github.com/fuel/oil" },
+    { "type": "vcs", "url": "https://github.com/fuel/parser" },
+    {
+      "type": "package",
+      "package": {
+        "name": "fuel/orm",
+        "version": "dev-1.7/master",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/novius-os/fuelphp-orm.git",
+          "reference": "1.7/master"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        },
+        "type": "fuel-package"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "fuel/core",
+        "version": "dev-1.7/master",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/novius-os/fuelphp-core.git",
+          "reference": "1.7/master"
+        },
+        "require": {
+          "composer/installers": "~1.0"
+        },
+        "type": "fuel-package"
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "novius-os/core",
+        "version": "dev-master/elche",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/novius-os/core.git",
+          "reference": "master/elche"
+        },
+        "require": {
+          "composer/installers": "~1.0",
+          "fuelphp/upload": "~2.0",
+          "monolog/monolog": "1.5.*"
+        },
+        "type": "fuel-package"
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "composer/installers": "~1.0",
+    "novius-os/core": "dev-master/elche",
+    "fuel/email": "dev-1.7/master",
+    "fuel/oil": "dev-1.7/master",
+    "fuel/orm": "dev-1.7/master",
+    "fuel/parser": "dev-1.7/master",
+    "fuel/core": "dev-1.7/master"
+  },
+  "config": {
+    "vendor-dir": "novius-os/vendor"
+  },
+  "extra": {
+    "installer-paths": {
+      "novius-os": ["novius-os/core"],
+      "novius-os/fuel-core": ["fuel/core"],
+      "novius-os/packages/{$name}": ["type:fuel-package"]
+    }
+  },
+  "minimum-stability": "dev"
+}
