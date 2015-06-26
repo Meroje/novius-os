@@ -25,9 +25,9 @@
     "novius-os/core": "dev-master/elche",
     "fuel/email": "dev-1.7/master",
     "fuel/oil": "dev-1.7/master",
-    "fuel/orm": "dev-1.7/master",
+    "novius-os/fuelphp-orm": "dev-1.7/master",
     "fuel/parser": "dev-1.7/master",
-    "fuel/core": "dev-1.7/master"
+    "novius-os/fuelphp-core": "dev-1.7/master"
   },
   "config": {
     "vendor-dir": "novius-os/vendor"
