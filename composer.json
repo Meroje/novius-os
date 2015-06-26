@@ -18,56 +18,6 @@
     { "type": "vcs", "url": "https://github.com/fuel/email" },
     { "type": "vcs", "url": "https://github.com/fuel/oil" },
     { "type": "vcs", "url": "https://github.com/fuel/parser" },
-    {
-      "type": "package",
-      "package": {
-        "name": "fuel/orm",
-        "version": "dev-1.7/master",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/novius-os/fuelphp-orm.git",
-          "reference": "1.7/master"
-        },
-        "require": {
-          "composer/installers": "~1.0"
-        },
-        "type": "fuel-package"
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "fuel/core",
-        "version": "dev-1.7/master",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/novius-os/fuelphp-core.git",
-          "reference": "1.7/master"
-        },
-        "require": {
-          "composer/installers": "~1.0"
-        },
-        "type": "fuel-package"
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "novius-os/core",
-        "version": "dev-master/elche",
-        "source": {
-          "type": "git",
-          "url": "https://github.com/novius-os/core.git",
-          "reference": "master/elche"
-        },
-        "require": {
-          "composer/installers": "~1.0",
-          "fuelphp/upload": "~2.0",
-          "monolog/monolog": "1.5.*"
-        },
-        "type": "fuel-package"
-      }
-    }
   ],
   "require": {
     "php": ">=5.3.3",
