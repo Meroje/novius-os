@@ -17,7 +17,7 @@
   "repositories": [
     { "type": "vcs", "url": "https://github.com/fuel/email" },
     { "type": "vcs", "url": "https://github.com/fuel/oil" },
-    { "type": "vcs", "url": "https://github.com/fuel/parser" },
+    { "type": "vcs", "url": "https://github.com/fuel/parser" }
   ],
   "require": {
     "php": ">=5.3.3",
