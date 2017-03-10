@@ -1,6 +1,6 @@
 [submodule "novius-os"]
 	path = novius-os
-	url = git://github.com/novius-os/core.git
+	url = git://github.com/Meroje/core.git
 [submodule "local/applications/noviusos_blog"]
 	path = local/applications/noviusos_blog
 	url = git://github.com/novius-os/noviusos_blog.git
